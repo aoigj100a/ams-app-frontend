@@ -1,16 +1,28 @@
+<script setup>
+
+import router from "../router"
+
+const goBack = () => {
+    router.back()
+};
+
+</script>
+
 <template>
     <div class="pt-[40px] ">
         <div class="mx-auto w-[458px] h-[950px] bg-slate-300 rounded-[40px] border-[24px] border-black relative">
             <div class="p-[8px] shadow bg-white">
                 <div class="flex justify-between items-center">
-                    <div>
+                    <div @click="goBack">
                         <svg width="24px" height="24px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                             <path fill="none" stroke="#000" stroke-width="2" d="M2,12 L22,12 M13,3 L22,12 L13,21"
                                 transform="matrix(-1 0 0 1 24 0)" />
                         </svg>
                     </div>
                     <div>
-                        登出
+                        <RouterLink to="/">
+                            登出
+                        </RouterLink>
                     </div>
                 </div>
             </div>
@@ -118,3 +130,5 @@
         </div>
     </div>
 </template> 
+
+

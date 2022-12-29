@@ -2,7 +2,11 @@
     <div class="pt-[40px] ">
         <div class="mx-auto w-[458px] h-[950px] bg-slate-300 rounded-[40px] border-[24px] border-black">
             <div class="p-[8px]">
-                <div class="text-right">使用者登入</div>
+                <div class="text-right">
+                    <RouterLink to="/" class="text-slate-600">
+                        使用者登入
+                    </RouterLink>
+                </div>
             </div>
             <div class="flex h-screen justify-center items-center">
                 <div class="flex-col flex ml-auto mr-auto items-center w-full">
@@ -71,10 +75,10 @@
                         </div>
                         <a href="#" class="text-base text-right font-roboto leading-normal hover:underline mb-6">
                             忘記密碼</a>
-                        <a href="/"
-                            class="bg-[#FFC14F] py-4 text-center px-17 rounded leading-tight text-xl font-sans mt-4 mb-20">
-                            登入
-                        </a>
+                        <RouterLink to="/checkIn"
+                            class="bg-[#FFC14F] py-4 text-center px-17 rounded leading-tight text-xl font-sans mt-4 mb-20 cursor-pointer">
+                            登入打卡
+                        </RouterLink>
                     </form>
                 </div>
             </div>

@@ -1,5 +1,7 @@
 import { createRouter, createWebHistory } from "vue-router";
 import HomeView from "../views/HomeView.vue";
+import NotFindView from "../views/NotFindView.vue";
+
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -54,6 +56,7 @@ const router = createRouter({
       name: "adminErrList",
       component: () => import("../views/admin/ErrListView.vue"),
     },
+    { path: '/:pathMatch(.*)*', component: NotFindView },
   ],
 });
 
