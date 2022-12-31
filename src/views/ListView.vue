@@ -1,13 +1,3 @@
-<script setup>
-
-import router from "../router"
-
-const goBack = () => {
-    router.back()
-};
-
-</script>
-
 <template>
     <div class="pt-[40px] ">
         <div class="mx-auto w-[458px] h-[950px] bg-slate-300 rounded-[40px] border-[24px] border-black relative">
@@ -20,42 +10,115 @@ const goBack = () => {
                         </svg>
                     </div>
                     <div class="flex justify-center items-center">
-
                         <span class="px-[8px] py-[2px] mx-[8px] bg-slate-200 rounded cursor-pointer">登出</span>
                     </div>
                 </div>
             </div>
-            <div class="flex flex-col h-[calc(100%-72px)]">
-                
-                <div class="flex justify-center items-center flex-col pt-[40px]">
-                    <div class="flex justify-center items-center">
-                        <span class="text-2xl">12月15日</span>
+            <div class="p-[8px]">
+                <div class="flex flex-col h-[calc(100%-72px)]">
+                    <div class="flex justify-center items-center flex-col pt-[40px] pb-[40px]">
+                        <div class="flex justify-center items-center">
+                            <span class="text-2xl">王小明</span>
+                        </div>
                     </div>
-                    <div class="flex justify-center items-center">
-                        <span class="text-2xl">09:28</span>
+                    <div class="flex justify-between mb-[8px]">
+                        <div>
+                            <span class="p-[4px] mr-[8px] rounded text-gray-600">
+                                日曆顯示
+                            </span>
+                            <span class="p-[4px] mr-[8px] bg-yellow-300 rounded">
+                                清單顯示
+                            </span>
+                        </div>
+                        <RouterLink to="changePassword">
+                            <span class="text-gray-600">修改密碼</span>
+                        </RouterLink>
+                    </div>
+                    <div>
+                        <div class='w-full max-w-lg mx-auto flex flex-col'>
+                            <div class="px-[24px] w-full">
+                                
+                                <div>
+                                    <div class="-mx-8 overflow-x-auto">
+                                        <div class="inline-block min-w-full overflow-hidden">
+                                            <table class="min-w-full leading-normal">
+                                                <thead>
+                                                    <tr>
+                                                        <th
+                                                            class="px-5 py-3 border-b-2 border-gray-200 bg-gray-100 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider">
+                                                            日期
+                                                        </th>
+                                                        <th
+                                                            class="px-5 py-3 border-b-2 border-gray-200 bg-gray-100 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider">
+                                                            上班時間
+                                                        </th>
+                                                        <th
+                                                            class="px-5 py-3 border-b-2 border-gray-200 bg-gray-100 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider">
+                                                            下班時間
+                                                        </th>
+
+                                                        <th
+                                                            class="px-5 py-3 border-b-2 border-gray-200 bg-gray-100 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider">
+                                                            是否異常
+                                                        </th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td class="px-5 py-5 border-b border-gray-200 bg-white text-sm">
+                                                            Jan 21, 2020
+                                                        </td>
+                                                        <td class="px-5 py-5 border-b border-gray-200 bg-white text-sm">
+                                                            <p class="text-gray-900 whitespace-no-wrap">
+                                                                8:30
+                                                            </p>
+                                                        </td>
+                                                        <td class="px-5 py-5 border-b border-gray-200 bg-white text-sm">
+                                                            <p class="text-gray-900 whitespace-no-wrap">
+                                                                17:30
+                                                            </p>
+                                                        </td>
+
+                                                        <td class="px-5 py-5 border-b border-gray-200 bg-white text-sm">
+                                                            <span
+                                                                class="relative inline-block px-3 py-1 font-semibold text-green-900 leading-tight">
+                                                                <span aria-hidden
+                                                                    class="absolute inset-0 bg-green-200 opacity-50 rounded-full"></span>
+                                                                <span class="relative">正常</span>
+                                                            </span>
+                                                        </td>
+                                                    </tr>
+
+                                                    
+                                                    <tr>
+                                                        <td class="px-5 py-5 bg-white text-sm">
+                                                            Jan 22, 2020
+                                                        </td>
+                                                        <td class="px-5 py-5 bg-white text-sm">
+                                                            <p class="text-gray-900 whitespace-no-wrap">8:30</p>
+                                                        </td>
+                                                        <td class="px-5 py-5 bg-white text-sm">
+                                                            <p class="text-gray-900 whitespace-no-wrap">無紀錄</p>
+                                                        </td>
+                                                        <td class="px-5 py-5 bg-white text-sm">
+                                                            <span
+                                                                class="relative inline-block px-3 py-1 font-semibold text-red-900 leading-tight">
+                                                                <span aria-hidden
+                                                                    class="absolute inset-0 bg-red-200 opacity-50 rounded-full"></span>
+                                                                <span class="relative">異常</span>
+                                                            </span>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="flex justify-center pt-[32px]">
-                    <div class="flex justify-center items-center
-                        border border-yellow-500 bg-yellow-500 text-white 
-                        rounded-l-lg transition duration-500 ease select-none px-[32px] py-[16px]
-                        hover:bg-yellow-600 focus:outline-none focus:shadow-outline">
-                        <span class="text-5xl">
-                            上班
-                        </span>
-                    </div>
-                    <div class="flex justify-center items-center
-                        border border-gray-500 bg-gray-500 text-white 
-                        rounded-r-lg transition duration-500 ease select-none px-[32px] py-[16px]
-                        hover:bg-gray-600 focus:outline-none focus:shadow-outline">
-                        <span class="text-5xl">
-                            下班
-                        </span>
-                    </div>
-                </div>
-                <div class="flex-1 flex bg-slate-600">
-                    地圖區域
-                </div>
+
             </div>
             <div class="p-[8px] shadow bg-white w-full absolute bottom-0 z-50">
                 <div class="flex justify-between items-center">
@@ -129,6 +192,7 @@ const goBack = () => {
             </div>
         </div>
     </div>
-</template> 
+</template>
+  
 
-
+  

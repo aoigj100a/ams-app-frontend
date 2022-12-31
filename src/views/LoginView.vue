@@ -33,32 +33,32 @@
                 <div class="flex-col flex ml-auto mr-auto items-center w-full">
                     <form action="" class="mt-[8px] flex flex-col w-8/12">
                         <div class="flex flex-wrap w-full relative bg-white 
-                        items-center rounded 
-                        pr-[40px]">
+                          items-center rounded 
+                          pr-[40px]">
                             <div class="flex -mr-px justify-center p-[16px]">
                                 <span class="flex items-center leading-normal bg-white 
-                                    rounded rounded-r-none text-xl px-[12px] whitespace-no-wrap text-gray-600">
+                                      rounded rounded-r-none text-xl px-[12px] whitespace-no-wrap text-gray-600">
                                     帳號
                                 </span>
                             </div>
                             <input type="text" class="flex-shrink flex-grow leading-normal w-px flex-1 border-0 h-[40px] 
-                                border-grey-light rounded rounded-l-none px-[12px] self-center 
-                                relative font-roboto text-xl outline-none" placeholder="Username" />
+                                  border-grey-light rounded rounded-l-none px-[12px] self-center 
+                                  relative font-roboto text-xl outline-none" placeholder="Username" />
                         </div>
                         <div class="pb-[8px] flex pt-[8px] mt-[0px] mb-[8px]
-                        bg-slate-500 border-slate-800 border-l-[8px]">
+                          bg-slate-500 border-slate-800 border-l-[8px]">
                             <span class="text-white text-sm">請輸入合法帳號後在輸入密碼</span>
                         </div>
                         <div class="flex flex-wrap w-full relative bg-white items-center rounded pr-[40px]">
                             <div class="flex -mr-px justify-center p-[16px]">
                                 <span class="flex items-center leading-normal bg-white rounded rounded-r-none text-xl 
-                                    px-[12px] whitespace-no-wrap text-gray-600">
+                                      px-[12px] whitespace-no-wrap text-gray-600">
                                     密碼
                                 </span>
                             </div>
                             <input type="text" class="flex-shrink flex-grow leading-normal w-px flex-1 border-0 
-                            h-[40px] border-grey-light rounded rounded-l-none px-[12px] self-center 
-                            relative font-roboto text-xl outline-none" placeholder="Password" />
+                              h-[40px] border-grey-light rounded rounded-l-none px-[12px] self-center 
+                              relative font-roboto text-xl outline-none" placeholder="Password" />
                             <span class="absolute right-[8px]">
                                 <svg width="24px" height="24px" viewBox="0 -0.5 17 17" version="1.1"
                                     xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -78,11 +78,13 @@
                             </span>
                         </div>
                         <div class="pb-[8px] flex pt-[8px] mt-[0px] mb-[8px]
-                        bg-slate-500 border-slate-800 border-l-[8px]">
+                          bg-slate-500 border-slate-800 border-l-[8px]">
                             <span class="text-white text-sm">請輸入密碼在按下登入</span>
                         </div>
-                        <a href="#" class="text-base text-right font-roboto leading-normal hover:underline mb-6">
-                            忘記密碼</a>
+                        <RouterLink to="/changePassword"
+                            class="text-base text-right font-roboto leading-normal hover:underline mb-6">
+                            忘記密碼
+                        </RouterLink>
                         <RouterLink to="/checkIn"
                             class="bg-[#FFC14F] py-4 text-center px-17 rounded leading-tight text-xl font-sans mt-4 mb-20 cursor-pointer">
                             登入打卡

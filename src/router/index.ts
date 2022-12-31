@@ -12,11 +12,6 @@ const router = createRouter({
       component: HomeView,
     },
     {
-      path: "/about",
-      name: "about",
-      component: () => import("../views/AboutView.vue"),
-    },
-    {
       path: "/login",
       name: "login",
       component: () => import("../views/LoginView.vue"),
@@ -32,6 +27,11 @@ const router = createRouter({
       component: () => import("../views/CalendarView.vue"),
     },
     {
+      path: "/list",
+      name: "list",
+      component: () => import("../views/ListView.vue"),
+    },
+    {
       path: "/checkInQR",
       name: "checkInQR",
       component: () => import("../views/CheckInQRView.vue"),
@@ -40,6 +40,11 @@ const router = createRouter({
       path: "/changePassword",
       name: "changePassword",
       component: () => import("../views/ChangePasswordView.vue"),
+    },
+    {
+      path: "/forgotPassword",
+      name: "forgotPassword",
+      component: () => import("../views/ForgotPasswordView.vue"),
     },
     {
       path: "/admin",
