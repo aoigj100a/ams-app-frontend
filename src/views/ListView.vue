@@ -12,12 +12,16 @@ import DefaultLayout from '../components/layouts/DefaultLayout.vue'
                 </div>
                 <div class="flex justify-between mb-[8px]">
                     <div>
-                        <span class="p-[4px] mr-[8px] rounded text-gray-600">
-                            日曆顯示
-                        </span>
-                        <span class="p-[4px] mr-[8px] bg-yellow-300 rounded">
-                            清單顯示
-                        </span>
+                        <RouterLink to="/calendar">
+                            <span class="p-[4px] mr-[8px] text-gray-600 rounded">
+                                日曆顯示
+                            </span>
+                        </RouterLink>
+                        <RouterLink to="/list">
+                            <span class="p-[4px] mr-[8px] bg-yellow-300 rounded">
+                                清單顯示
+                            </span>
+                        </RouterLink>
                     </div>
                     <RouterLink to="changePassword">
                         <span class="text-gray-600">修改密碼</span>

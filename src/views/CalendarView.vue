@@ -16,14 +16,16 @@ const goBack = () => {
                     </div>
                 </div>
                 <div class="flex justify-between">
-                    <div>
+                    <RouterLink to="/calendar">
                         <span class="p-[4px] mr-[8px] bg-yellow-300 rounded">
                             日曆顯示
                         </span>
-                        <span class="p-[4px] mr-[8px] rounded text-gray-600">
+                    </RouterLink>
+                    <RouterLink to="/list">
+                        <span class="p-[4px] mr-[8px] text-gray-600 rounded">
                             清單顯示
                         </span>
-                    </div>
+                    </RouterLink>
                     <RouterLink to="changePassword">
                         <span class="text-gray-600">修改密碼</span>
                     </RouterLink>
