@@ -1,9 +1,9 @@
 <template>
     <div class="pt-[40px] ">
-        <div class="mx-auto w-[458px] h-[950px] bg-slate-300 rounded-[40px] border-[24px] border-black">
+        <div class="mx-auto w-[458px] h-[950px] bg-[#f0d7bc] rounded-[40px] border-[24px] border-black">
             <div class="p-[8px]">
                 <div class="text-right">
-                    <RouterLink to="/" class="text-slate-600">
+                    <RouterLink to="/" class="text-[#4b4f7e] text-2xl">
                         使用者登入
                     </RouterLink>
                 </div>
@@ -12,7 +12,7 @@
                 <div class="flex-col flex ml-auto mr-auto items-center w-full">
                     <form action="" class="mt-[8px] flex flex-col w-8/12">
                         <div class="pb-[16px]">
-                            <h1 class="text-center text-2xl">管理員登入</h1>
+                            <h1 class="text-center text-2xl text-[#4b4f7e]">管理員登入</h1>
                         </div>
                         <div class="flex flex-wrap w-full relative bg-white 
                         items-center rounded searchable-list
@@ -73,10 +73,10 @@
                         bg-slate-500 border-slate-800 border-l-[8px]">
                             <span class="text-white text-sm">請輸入密碼在按下登入</span>
                         </div>
-                        <a href="#" class="text-base text-right font-roboto leading-normal hover:underline mb-6">
+                        <a href="#" class="text-base text-right font-roboto text-[#4b4f7e] leading-normal hover:underline mb-6">
                             忘記密碼</a>
                         <RouterLink to="/checkIn"
-                            class="bg-[#FFC14F] py-4 text-center px-17 rounded leading-tight text-xl font-sans mt-4 mb-20 cursor-pointer">
+                            class="bg-[#4b4f7e] text-[#fff] py-[16px] text-center rounded leading-tight text-2xl tracking-widest font-bold mt-[16px] mb-[16px] cursor-pointer">
                             登入打卡
                         </RouterLink>
                     </form>

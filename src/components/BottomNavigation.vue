@@ -1,6 +1,6 @@
 <template>
     <div class="p-[8px] shadow bg-white w-full absolute bottom-0 z-50">
-        <div class="flex justify-between items-center">
+        <div class="flex justify-between items-center h-[50px]">
             <RouterLink to="/calendar" class="text-slate-600">
                 <!-- <?xml version="1.0" encoding="iso-8859-1"?> -->
                 <!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->

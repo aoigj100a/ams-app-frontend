@@ -10,31 +10,31 @@ const goBack = () => {
     <DefaultLayout>
         <div class="p-[8px]">
             <div class="flex flex-col h-[calc(100%-72px)]">
-                <div class="flex justify-center items-center flex-col pt-[40px] pb-[40px]">
+                <div class="flex justify-center items-center flex-col pt-[40px] pb-[24px]">
                     <div class="flex justify-center items-center">
-                        <span class="text-2xl">王小明</span>
+                        <span class="text-2xl text-[#4b4f7e] font-bold">王小明</span>
                     </div>
                 </div>
-                <div class="flex justify-between">
-                    <RouterLink to="/calendar">
-                        <span class="p-[4px] mr-[8px] bg-yellow-300 rounded">
-                            日曆顯示
-                        </span>
-                    </RouterLink>
-                    <RouterLink to="/list">
-                        <span class="p-[4px] mr-[8px] text-gray-600 rounded">
-                            清單顯示
-                        </span>
-                    </RouterLink>
+                <div class="flex justify-between px-[16px] pb-[32px] items-center">
+                    <div>
+                        <RouterLink to="/calendar">
+                            <span class="p-[4px] mr-[16px] bg-[#e8a985] text-[#fff] text-2xl rounded">
+                                日曆顯示
+                            </span>
+                        </RouterLink>
+                        <RouterLink to="/list">
+                            <span class="p-[4px] text-gray-400 text-2xl rounded">
+                                清單顯示
+                            </span>
+                        </RouterLink>
+                    </div>
                     <RouterLink to="changePassword">
-                        <span class="text-gray-600">修改密碼</span>
+                        <span class="text-[#4b4f7e]">修改密碼</span>
                     </RouterLink>
                 </div>
-                <div>
-                    <div class="flex justify-between p-[8px]">
-                        <span>
-                            2022 年 12 月
-                        </span>
+                <div class="bg-[#4b4f7e]">
+                    <div class="flex justify-center p-[8px] text-[#fff] text-xl tracking-widest font-medium">
+                        
                         <span>
                             TODAY
                         </span>

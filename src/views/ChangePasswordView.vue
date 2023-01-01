@@ -1,10 +1,10 @@
 
 <template>
     <div class="pt-[40px] ">
-        <div class="mx-auto w-[458px] h-[950px] bg-slate-300 rounded-[40px] border-[24px] border-black">
+        <div class="mx-auto w-[458px] h-[950px] bg-[#f0d7bc] rounded-[40px] border-[24px] border-black">
             <div class="p-[8px]">
                 <div class="text-right">
-                    <RouterLink to="/" class="text-slate-600">
+                    <RouterLink to="/" class="text-[#4b4f7e] text-2xl">
                         使用者登入
                     </RouterLink>
                 </div>
@@ -13,7 +13,7 @@
                 <div class="pt-[40px] flex-col flex ml-auto mr-auto justify-centers items-center w-full">
                     <form action="" class="mt-[8px] flex flex-col w-8/12 h-full">
                         <div class="pb-[16px]">
-                            <h1 class="text-center text-2xl">修改密碼</h1>
+                            <h1 class="text-center text-2xl text-[#4b4f7e] ">修改密碼</h1>
                         </div>
                         <!-- <div class="flex flex-wrap w-full relative bg-white 
                         items-center rounded 
@@ -97,13 +97,15 @@
                             <span class="text-white text-sm">確認新密碼</span>
                         </div>
                         <RouterLink to="/checkIn"
-                            class="bg-[#FFC14F] py-4 text-center rounded leading-tight text-xl font-sans mt-[16px] mb-[8px] cursor-pointer">
+                            class="bg-[#4b4f7e] text-[#fff] py-[16px] text-center rounded leading-tight text-2xl tracking-widest font-bold mt-[16px] mb-[16px] cursor-pointer">
                             確定送出
                         </RouterLink>
-                        <a href="#" class="text-base text-right font-roboto leading-normal hover:underline mb-6">
+                        <a href="#"
+                            class="text-base text-[#4b4f7e] text-right font-roboto leading-normal hover:underline mb-[16px]">
                             完成更變密碼
                         </a>
-                        <a href="#" class="text-base text-right font-roboto leading-normal hover:underline mb-6">
+                        <a href="#"
+                            class="text-base text-[#4b4f7e] text-right font-roboto leading-normal hover:underline mb-[16px]">
                             直接重新登入
                         </a>
                     </form>

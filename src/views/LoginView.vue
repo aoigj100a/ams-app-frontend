@@ -1,9 +1,9 @@
 <template>
     <div class="pt-[40px] ">
-        <div class="mx-auto w-[458px] h-[950px] bg-slate-300 rounded-[40px] border-[24px] border-black">
+        <div class="mx-auto w-[458px] h-[950px] bg-[#f0d7bc] rounded-[40px] border-[24px] border-black">
             <div class="p-[8px]">
                 <div class="text-right">
-                    <RouterLink to="/admin" class="text-slate-600">
+                    <RouterLink to="/admin" class="text-[#4b4f7e] text-2xl">
                         管理員登入
                     </RouterLink>
                 </div>
@@ -86,7 +86,7 @@
                             忘記密碼
                         </RouterLink>
                         <RouterLink to="/checkIn"
-                            class="bg-[#FFC14F] py-4 text-center px-17 rounded leading-tight text-xl font-sans mt-4 mb-20 cursor-pointer">
+                            class="bg-[#4b4f7e] text-[#fff] py-[16px] text-center rounded leading-tight text-2xl tracking-widest font-bold mt-[16px] mb-[16px] cursor-pointer">
                             登入打卡
                         </RouterLink>
                     </form>
