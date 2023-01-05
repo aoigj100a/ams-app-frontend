@@ -1,6 +1,6 @@
 # AMS-app-frontend
 
-一個出勤紀錄管理的 Web app，前端框架使用 vue3 搭配 tailwindCSS，主要樣式為自訂，使用 headless UI 框架作為輔助。
+一個出勤紀錄管理的 Web app，前端框架使用 vue3，搭配 tailwindCSS，主要樣式為自訂，使用 headless UI 框架作為輔助。
 
 ## 專案設置
 

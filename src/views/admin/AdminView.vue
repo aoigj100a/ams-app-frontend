@@ -8,7 +8,7 @@
                     </RouterLink>
                 </div>
             </div>
-            <div class="flex h-screen justify-center items-center">
+            <div class="flex h-screen">
                 <div class="flex-col flex ml-auto mr-auto items-center w-full">
                     <form action="" class="mt-[8px] flex flex-col w-8/12">
                         <div class="pb-[16px]">
